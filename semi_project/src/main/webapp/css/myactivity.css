@@ -82,10 +82,8 @@ p {
 
 #navmain {
 	position: fixed;
-	bottom: 0;
 	float: left;
 	height: 80px;
-	/* left: 36.58%; */
 	left: inherit;
 	background: white;
 }

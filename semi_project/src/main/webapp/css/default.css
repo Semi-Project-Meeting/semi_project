@@ -25,9 +25,9 @@ body {
 #navmain {
 	position: fixed;
 	background: white;
-    height: 87px;
-    width: 434px;
-    padding-top: 10px;
+	height: 83px;
+	width: 434px;
+	padding-top: 10px;
 }
 /* �ϴ� �� ��� */
 #navmain li {
@@ -86,15 +86,12 @@ body {
 	position: fixed;
 	float: left;
 	background-color: rgba(36, 36, 34, 0.76);
-	opacity: 0.8;
+	opacity: 1;
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
-	bottom: 80px;
-	width: 200;
-	height: 220px;
-	list-style: none;
-	animation-name: appear;
-	animation-duration: 0.5s;
+	bottom: 418px;
+	width: 440px;
+	margin: 0px 0px -94px -12px;
 }
 
 #navmodal li {
@@ -102,6 +99,12 @@ body {
 	width: 200px;
 	float: left;
 	border: none;
+	margin-left: 9px;
+}
+
+#navmodal li a {
+	text-decoration: none;
+	color: white;
 }
 
 #meetingCreate {

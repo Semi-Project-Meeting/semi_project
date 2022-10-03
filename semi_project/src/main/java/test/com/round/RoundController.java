@@ -116,8 +116,8 @@ public class RoundController extends HttpServlet {
 		HttpSession session = request.getSession(); // 객체 초기화
 
 		// session에서 member_id를 가져옴.
-		String member_id = (String) session.getAttribute("member_id");
-
+		String member_id = String.valueOf(session.getAttribute("member_id"));
+		System.out.println("memberid"+member_id);
 		// 메인 라운딩 개설하기 버튼
 		if (sPath.equals("/main_round_insertOK.do")) {
 			String name = "";

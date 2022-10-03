@@ -5,7 +5,7 @@
 
 
 <div id="navmodal" class="hidden">
-	<ul>
+	
 		<li><a href="main_meeting_insert.do"> <img
 				src="png/meetingCreate.png" id="meetingCreate" /><br />
 			<b>모임 개설하기</b>
@@ -14,9 +14,10 @@
 				src="png/roundCreate.png" id="roundCreate" /><br />
 			<b>라운드 개설하기</b>
 		</a></li>
-	</ul>
+	
 </div>
 <div id="navmain">
+
 	<li><a href="h_home.do"><img
 			src="png/homeIcon.png" id="homeIcon" /><br />홈</a></li>
 	<li><a href="main_round_searchList.do"><img

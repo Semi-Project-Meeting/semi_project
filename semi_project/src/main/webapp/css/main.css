@@ -133,8 +133,6 @@ body {
 	width: 200;
 	height: 150px;
 	list-style: none;
-	animation-name: appear;
-	animation-duration: 0.5s;
 }
 
 #navmodal li {

@@ -12,7 +12,6 @@ html {
 body {
   margin: 0;
 }
-/* ����� �������� �Ͼ� ����ȭ�� */
 #bg {
   padding: 20px;
   height: max-content;
@@ -110,15 +109,6 @@ section {
   margin-top: 20px;
 }
 
-/* �ϴ� �� */
-/* #navmain { */
-/*   position: fixed; */
-/*   bottom: 0; */
-/*   float: left; */
-/*   height: 80px; */
-/*   background: white; */
-/* } */
-/* �ϴ� �� ��� */
 #navmain li {
   width: 80px;
   background-color: white;
@@ -126,12 +116,12 @@ section {
   float: left;
   border: none;
 }
-/* ������ �۾� */
+
 #navmain a {
   font-size: 13px;
   color: #777;
 }
-/* Ȩ ������ */
+
 #homeIcon {
   height: 30px;
   width: 30px;
@@ -181,8 +171,6 @@ section {
   width: 200;
   height: 150px;
   list-style: none;
-  animation-name: appear;
-  animation-duration: 0.5s;
 }
 #navmodal li {
   margin-top: 30px;

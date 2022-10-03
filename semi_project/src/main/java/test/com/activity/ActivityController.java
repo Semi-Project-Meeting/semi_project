@@ -142,7 +142,8 @@ public class ActivityController extends HttpServlet {
 			// activityStatus(활동전,활동중,활동후)
 			String activityState = request.getParameter("activityState");
 			System.out.println("activityState:" + activityState);
-			List<ActivityVO> vos = dao.inSelectAll(member_id, activityState);
+			System.out.println(request.getParameter("meeting_id"));
+			List<ActivityVO> vos = dao.inSelectAll(request.getParameter("meeting_id"), activityState);
 
 			// json으로 반환
 			String txt = "[";
@@ -163,6 +164,8 @@ public class ActivityController extends HttpServlet {
 			out.print(txt);
 			System.out.println(txt);
 		} else if (sPath.equals("/activity_insert.do")) {
+			String meeting_id = request.getParameter("meeting_id");
+			request.setAttribute("meeting_id", meeting_id);
 			request.getRequestDispatcher("activity/insert.jsp").forward(request, response);
 		}
 
@@ -181,8 +184,7 @@ public class ActivityController extends HttpServlet {
 
 		// session
 		HttpSession session = request.getSession();
-		session.setAttribute("member_id", "1");
-		String member_id = (String) session.getAttribute("member_id"); // member_name
+		String member_id = String.valueOf(session.getAttribute("member_id")) ; // member_name
 
 		if (sPath.equals("/activity_insertOK.do")) {
 			// 현재 시간 구하기
@@ -280,10 +282,12 @@ public class ActivityController extends HttpServlet {
 				System.out.println("activity_id 값  : " + activity_id);
 				vo2.setMember_id(Long.parseLong(member_id));
 				vo2.setRole("ACTIVITY_LEADER");
+				System.out.println("meetingid:"+vo2.getMeeting_id());
 				int result2 = dao.enter(vo2);
 
 				if (result2 == 1) {
 					System.out.println("액티비티장이 되었습니다.");
+					response.sendRedirect("meeting_selectOne.do?meeting_id="+request.getParameter("meeting_id"));
 				} else {
 					System.out.println("액티비티장이 될 수 없습니다.");
 				}

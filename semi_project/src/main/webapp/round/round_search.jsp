@@ -63,7 +63,7 @@
 
 			</form>
 		</div>
-		<div class="container">
+		<div class="container" style="height: 616.5px;">
 			<section id="round_searchList">
 				<!-- el 태그로 받는다.  var 변수로 객체변수 설정. -->
 				<c:forEach var="vo" items="${vos}">

@@ -18,7 +18,7 @@ public interface DB_oracle {
 	String MEETING_UPDATE = "update meeting set name = ?,explanation = ?, gender = ?,age=?,location = ?,permission = ? ,secret = ? ,total_people = ?,image_url = ? where meeting_id = ?";
 	String MEETING_SEARCH_LIST_NAME = "select * from meeting where name like ? and location = ? and gender = ? and age = ? and secret='false'";
 	String MEETING_SELECT_ALL = "select * from meeting where secret='false'";
-	String MEETING_SELECT_ONE = "select * from meeting where me	eting_id = ?";
+	String MEETING_SELECT_ONE = "select * from meeting where meeting_id = ?";
 	String MEETING_ENTER = "insert into " + "meeting_user (meeting_user_id,meeting_id,member_id,role) "
 			+ "values(seq_meeting_user.nextval,?,?,?)";
 	String MEETING_ID = "select seq_meeting.nextval from dual";
@@ -41,9 +41,9 @@ public interface DB_oracle {
 			+ "activity (activity_id,name,explanation,activity_date,activity_time,location,total_people,member_id,meeting_id,image_url) "
 			+ "values(?,?,?,?,?,?,?,?,?,?)";
 	String MEETING_ACTIVITY_SELECT_ALL = "select activity.activity_id,name,activity_date,activity_time,location, "
-			+ "(select count(*)from activity_user where activity_user.activity_id = activity.activity_id) current_people, "
+			+ "(select count(*)from activity_user where activity_user.activity_id = activity.activity_id) current_people_cnt, "
 			+ "image_url, total_people from activity join activity_user "
-			+ "on activity.activity_id = activity_user.activity_id " + "where meeting_id=?";
+			+ "on activity.activity_id = activity_user.activity_id " + "where activity_user.meeting_id=? order by activity.activity_id desc";
 	String ACTIVITY_ID = "select seq_activity.nextval from dual";
 	String ACTIVITY_ENTER = "insert into " + "activity_user (activity_user_id,activity_id,meeting_id,member_id,role) "
 			+ "values(seq_activity_user.nextval,?,?,?,?)";
@@ -87,13 +87,14 @@ public interface DB_oracle {
 			+ "and current_people<total_people";
 	String SQL_MY_MEETING_SELECT_ALL = "select meeting.meeting_id, name, explanation, image_url, age,gender,total_people,location "
 			+ "from meeting join meeting_user on meeting.meeting_id = meeting_user.meeting_id "
-			+ "where meeting_user.member_id=?";
+			+ "where meeting_user.member_id=? order by meeting_id desc";
 	// 액티비티
 	String SQL_MY_ACTIVITY_SELECT_ALL = "select activity.activity_id,name,activity_date,activity_time,location, "
 			+ "(select count(*)from activity_user where activity_user.activity_id = activity.activity_id) current_people, "
 			+ "image_url, total_people from activity join activity_user "
 			+ "on activity.activity_id = activity_user.activity_id " + "where activity_user.member_id=?";
-	String SQL_MY_ROUND_SELECT_ALL = "select round.round_id,name,course,round_date,(select count(*)from round_user where round_user.round_id = round.round_id) current_people, total_people, image_url from round join round_user on round.round_id = round_user.round_id where round_user.member_id=?";
+	String SQL_MY_ROUND_SELECT_ALL = "select round.round_id,name,course,round_date,(select count(*)from round_user where round_user.round_id = round.round_id) current_people, total_people, image_url from round join round_user on round.round_id = round_user.round_id "
+			+ "where round_user.member_id=? order by round_id desc";
 	String SQL_ACTIVITY_SELECT_ALL = "select activity.activity_id,name,activity_date,activity_time,location, "
 			+ "(select count(*)from activity_user where activity_user.activity_id = activity.activity_id) current_people, "
 			+ "image_url, total_people from activity join activity_user "
