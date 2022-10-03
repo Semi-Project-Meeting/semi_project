@@ -110,7 +110,7 @@
 
 			</table>
 		</form>
-
+</div>
 		<jsp:include page="../main/default.jsp"></jsp:include>
 </body>
 </html>
