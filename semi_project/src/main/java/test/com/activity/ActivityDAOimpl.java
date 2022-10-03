@@ -434,7 +434,7 @@ public class ActivityDAOimpl implements ActivityDAO {
 
 	// 모임내 액티비티 리스트
 	@Override
-	public List<ActivityVO> inSelectAll(String member_id, String activityState) {
+	public List<ActivityVO> inSelectAll(String meeting_id, String activityState) {
 		List<ActivityVO> vos = new ArrayList<ActivityVO>();
 		Date today = null;
 		Date activity_date = null;
@@ -446,7 +446,7 @@ public class ActivityDAOimpl implements ActivityDAO {
 			conn = DriverManager.getConnection(DB_oracle.URL, DB_oracle.USER, DB_oracle.PASSWORD);
 			System.out.println("Conn Successed...");
 			pstmt = conn.prepareStatement(DB_oracle.MEETING_ACTIVITY_SELECT_ALL);
-			pstmt.setLong(1, Long.parseLong(member_id));
+			pstmt.setLong(1, Long.parseLong(meeting_id));
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				try {
@@ -468,7 +468,7 @@ public class ActivityDAOimpl implements ActivityDAO {
 					vo.setActivity_date(rs.getString("activity_date"));
 					vo.setActivity_time(rs.getString("activity_time"));
 					vo.setLocation(rs.getString("location"));
-					vo.setCurrent_people(rs.getInt("current_people"));
+					vo.setCurrent_people(rs.getInt("current_people_cnt"));
 					vo.setTotal_people(rs.getInt("total_people"));
 					vo.setImage_url(rs.getString("image_url"));
 					vos.add(vo);
@@ -479,7 +479,7 @@ public class ActivityDAOimpl implements ActivityDAO {
 					vo.setActivity_date(rs.getString("activity_date"));
 					vo.setActivity_time(rs.getString("activity_time"));
 					vo.setLocation(rs.getString("location"));
-					vo.setCurrent_people(rs.getInt("current_people"));
+					vo.setCurrent_people(rs.getInt("current_people_cnt"));
 					vo.setTotal_people(rs.getInt("total_people"));
 					vo.setImage_url(rs.getString("image_url"));
 					vos.add(vo);

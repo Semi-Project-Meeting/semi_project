@@ -8,6 +8,12 @@
 <title>semi project meetingboard</title>
 <link rel="stylesheet" href="css/myactivity.css?after" />
 <link rel="stylesheet" href="css/main.css" />
+<style>
+tbody tr {
+	border-collapse: separate;
+	border-spacing: 0 20px;
+}
+</style>
 </head>
 <body>
 	<div id="bg">
@@ -23,19 +29,18 @@
 				<li><a href="mymeeting_list.do"
 					style="color: skyblue; border-bottom: 1px solid skyblue">모임</a></li>
 				<li><a href="myactivity_list.do">액티비티</a></li>
-<!-- 				<li><a href="myrounding_list.do">라운드</a></li> -->
+				<!-- 				<li><a href="myrounding_list.do">라운드</a></li> -->
 			</ul>
 		</div>
 		<br /> <br /> <br /> <br /> <br />
 
-		<section id="meeting1"
-			style="overflow: scroll; width: 400px; height: 500px;">
+		<section class="container" style="height: 593px;">
 			<table class="table_margin">
 				<tbody>
 					<!-- el 태그로 받는다.  var 변수로 객체변수 설정. -->
 					<c:forEach var="vo" items="${vos}">
 						<tr>
-							<td><a
+							<td rowspan="6"><a
 								href="meeting_selectOne.do?meeting_id=${vo.meeting_id}"> <img
 									class="img_square" width="65px" alt="'+image_url+'"
 									src="upload/${vo.image_url}">
@@ -46,40 +51,24 @@
 						</tr>
 						<tr>
 							<td><a class="list">${vo.location}</a></td>
+						</tr>
+						<tr>
 							<td><a class="list">나이 : ${vo.age}</a></td>
+						</tr>
+						<tr>
 							<td><a class="list">성별 : ${vo.gender}</a></td>
 						</tr>
 						<tr>
 							<td><a class="list">모집인원 : ${vo.total_people}</a></td>
 						</tr>
+						<tr><td><br></td></tr>
 					</c:forEach>
 				</tbody>
 			</table>
 
 		</section>
 
-		<div id="navmodal" class="hidden">
-			<li><a href="meetingCreate.do"> <img
-					src="../png/meetingCreate.png" id="meetingCreate" /><br /> <b>모임
-						개설하기</b>
-			</a></li>
-			<li><a href="roundCreate.do"> <img
-					src="../png/roundCreate.png" id="roundCreate" /><br /> <b>라운드
-						개설하기</b>
-			</a></li>
-		</div>
-
-		<div id="navmain">
-			<li><a href="home.do"><img src="png/homeIcon.png"
-					id="homeIcon" /><br />홈</a></li>
-			<li><a href="s_search.do"><img src="png/search.png"
-					id="search" /><br />검색</a></li>
-			<li><img src="png/mainAddBtn.png" id="Addbtn" /></li>
-			<li><a href="notice.do"><img src="png/bell.png" id="bell" /><br />알림</a>
-			</li>
-			<li><a href="mypage/mypage.jsp"><img src="png/mypage.png"
-					id="mypage" /><br />마이페이지</a></li>
-		</div>
+		<jsp:include page="../main/default.jsp"></jsp:include>
 	</div>
 	<script>
 		const mainBtn = document.getElementById("Addbtn");
