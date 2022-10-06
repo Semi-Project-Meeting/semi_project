@@ -27,7 +27,6 @@
   <br/>
   <ul>
     <li>성별,나이,지역에 따라 현재 로그인한 유저의 맞게 추천 액티비티를 보여준다.</li>
-    <li></li>
     <img width="527" alt="KakaoTalk_Photo_2022-10-06-16-35-02-3" src="https://user-images.githubusercontent.com/58718743/194263463-d79f28aa-fa4c-40d6-8fe2-95f431995c2e.png">
   </ul>
 </details>
@@ -36,7 +35,6 @@
   <br/>
   <ul>
     <li>성별,나이,지역에 따라 현재 로그인한 유저의 맞게 랜덤으로 추천 모임 를 보여준다.</li>
-    <li></li>
     <img width="527" alt="KakaoTalk_Photo_2022-10-06-16-35-02-3" src="https://user-images.githubusercontent.com/58718743/194291269-1fb10e50-0cb4-41d1-b10e-5c5755cb21d7.png">
   </ul>
 </details>
