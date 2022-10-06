@@ -17,8 +17,7 @@
   <ul>
     <li>단어나 고민 상담 후 실시간으로 게시글, 댓글 외에도 실시간으로 빠른 소통이 가능한 창구입니다.</li>
     <li>여러 유저가 함께 대화할 수 있도록 메인 페이지에 다대다 채팅 기능을 구현했습니다.</li>
-   <img src="[https://i.ibb.co/r4c2p5R/Kakao-Talk-Photo-2022-10-06-16-35-02-1.png](https://drive.google.com/file/d/1d52BI6Cuw9cb9k47SOGA6_nIqCB_CzBx/view?usp=sharing)" alt="Kakao-Talk-Photo-2022-10-06-16-35-02-1" width="230px">
-
+   <img src="https://drive.google.com/file/d/1d52BI6Cuw9cb9k47SOGA6_nIqCB_CzBx/view?usp=sharing" width="230px">
     
   </ul>
 </details>
