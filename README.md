@@ -12,22 +12,12 @@
 <br>
 
 <details> 
-  <summary><strong>😎 나만의 캐릭터 커스터마이징</strong></summary>
-  <br/>
-  <ul>
-    <li>회원 가입시 '시소'의 마스코트 캐릭터를 활용해 유저가 자신만의 개성을 드러낼 수 있도록 했습니다.</li>
-    <li>설정한 캐릭터와 닉네임은 마이페이지를 통해 언제든 수정 가능합니다.</li>
-    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbABAAD%2FbtrDuwnBz1i%2FCaQkquPqk4bEf2QJcL6Wt1%2Fimg.png" width="700">
-  </ul>
-</details>
-
-<details> 
   <summary><strong> 🗨️알림페이지: 모임 초대 알림, 모임 개설 완료 알림 등 유저에게 해당하는 알림이 보입니다.</strong></summary>
   <br/>
   <ul>
     <li>단어나 고민 상담 후 실시간으로 게시글, 댓글 외에도 실시간으로 빠른 소통이 가능한 창구입니다.</li>
     <li>여러 유저가 함께 대화할 수 있도록 메인 페이지에 다대다 채팅 기능을 구현했습니다.</li>
-    img src="https://i.ibb.co/hDZFd2J/Kakao-Talk-Photo-2022-10-06-16-35-02-1.png" alt="Kakao-Talk-Photo-2022-10-06-16-35-02-1" border="0">
+    <img src="https://i.ibb.co/hDZFd2J/Kakao-Talk-Photo-2022-10-06-16-35-02-1.png" alt="Kakao-Talk-Photo-2022-10-06-16-35-02-1" border="0" width="230">
     <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbQQhc5%2FbtrDuvWvAyD%2Fro0Y69Q0fTeayMyn9GkL20%2Fimg.png" width="230">
   </ul>
 </details>
