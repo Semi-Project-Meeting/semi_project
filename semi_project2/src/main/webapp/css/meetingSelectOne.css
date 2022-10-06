@@ -1,0 +1,75 @@
+
+html {
+   box-sizing: border-box;
+   background: url("../png/bgimg.png") center no-repeat;
+   background-size: cover;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+   margin: 0;
+}
+#bg {
+   padding-top:40px;
+   padding-bottom:20px;
+   height: 900px;
+   width: 414px;
+   background: white;
+   position:relative;
+}
+section {
+   positon:absolute;
+   padding:20px;
+   overflow: scroll;
+   width: 360px;
+   height: 750px;
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
+}
+
+section::-webkit-scrollbar {
+   display: none; /* Chrome, Safari, Opera*/
+}
+
+/* 筌뤴뫀而 占쎌뵬 占쎄텢占쎌뵠筌앸뜆 벥 占쎈릭占쏙옙 獄쏅 源 占쎌넅筌롳옙 */
+.meetingProf{
+   float:right;
+   width:80px
+}
+.back{
+   width:414px;
+   opacity:0.7;
+}
+tbody{
+   text-align:left;
+}
+.table_margin{
+   margin-bottom:40px
+}
+.lists{
+   font-size:40px;
+}
+
+.option{
+   text-align:left;
+}
+
+button{
+   width:160px;
+   height:40px;
+   border-radius:10px;
+   background:blue;
+   color:white;
+   font-size:15px;
+   margin-top:150px;
+   margin-left:190px;
+   
+}
+td > a, div > p{
+   opacity:0.5;
+}

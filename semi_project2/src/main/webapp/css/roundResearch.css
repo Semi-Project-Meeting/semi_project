@@ -1,0 +1,47 @@
+
+html {
+   box-sizing: border-box;
+   background: url("../png/bgimg.png") center no-repeat;
+   background-size: cover;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+   margin: 0;
+}
+
+.container {
+   overflow: scroll;
+   width: 420px;
+   height: 750px;
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+   display: none; /* Chrome, Safari, Opera*/
+}
+
+/* 筌뤴뫀而 占쎌뵬 占쎄텢占쎌뵠筌앸뜆 벥 占쎈릭占쏙옙 獄쏅 源 占쎌넅筌롳옙 */
+#bg {
+   padding: 20px;
+   height: 900px;
+   width: 414px;
+   background: white;
+}
+ul > img{
+   
+}
+section > ul{
+   text-align:left;
+}
+b{
+   font-size:20px;
+}
+
+/* 占쎈릭占쎈뼊 獄쏉옙 */

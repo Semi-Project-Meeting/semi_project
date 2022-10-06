@@ -1,0 +1,117 @@
+html {
+   box-sizing: border-box;
+   background: url("../png/bgimg.png") center no-repeat;
+   background-size: cover;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+   margin: 0;
+}
+
+form {
+   height: 750px;
+}
+
+/* 紐⑤컮 씪  궗 씠利덉쓽  븯   諛뷀깢 솕硫  */
+#bg {
+   padding: 20px;
+   height: 900px;
+   width: 414px;
+   background: white;
+}
+
+h1 {
+   text-align: center;
+}
+
+input[type="file"] {
+   background-color: white;
+   display: none
+}
+
+#img {
+   text-align: center;
+}
+
+.img {
+   padding-left: 100px;
+   margin: auto;
+   display: block;
+}
+
+button {
+   font-weight: bolder;
+   border: 0.4em solid #D3D5D9;
+   font-size: 16px;
+   color: white;
+   background-color: #D3D5D9;
+}
+
+#name {
+   height: 40px;
+   width: 400px;
+   font-size: 20px;
+   text-align: center;
+   border: 1px white;
+   border-bottom: 10px;
+}
+
+#explanation {
+   height: 40px;
+   width: 400px;
+   font-size: 20px;
+   text-align: center;
+   border: 1px white;
+}
+
+td {
+   width: 400px;
+}
+
+hr {
+   opacity: 0.5;
+   margin-bottom: 40px;
+}
+
+.open {
+   font-size: 25px;
+   opacity: 0.5;
+}
+
+.secret {
+   font-size: 25px;
+   opacity: 0.5;
+}
+
+#location, #gender, #age, #handy {
+   height: 30px;
+   width: 200px;
+   border: 1px white;
+   font-size: 20px;
+   text-align: center;
+   float: right;
+}
+
+.btn-primary {
+   width: 300px;
+   height: 40px;
+   font-size: 25px;
+}
+
+.container {
+   overflow: scroll;
+   width: 420px;
+   height: 750px;
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+   display: none; /* Chrome, Safari, Opera*/
+}
