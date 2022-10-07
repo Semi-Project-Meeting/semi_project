@@ -44,9 +44,9 @@
 </details>
 <br>
 
-### 🗒️ 기능명세서
+## 🗒️ 기능명세서
 <h3><a href="https://deadpan-flame-f67.notion.site/88ecbb8ca623435eafe66a8e64fc8db8?v=4e22347b5a82414ca704d74f24df0857">문서 보러가기</a></h3>
-
+<br>
 
 ## 👪 팀원 소개
 <br>
