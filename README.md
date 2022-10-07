@@ -45,8 +45,9 @@
 <br>
 
 ## 🗒️ 기능명세서
-<img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
+<img width="100" src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
 <a href="https://deadpan-flame-f67.notion.site/88ecbb8ca623435eafe66a8e64fc8db8?v=4e22347b5a82414ca704d74f24df0857">https://deadpan-flame-f67.notion.site/88ecbb8ca623435eafe66a8e64fc8db8?v=4e22347b5a82414ca704d74f24df0857</a>
+<br>
 <br>
 
 ## 👪 팀원 소개
