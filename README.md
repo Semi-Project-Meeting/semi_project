@@ -9,6 +9,7 @@
 2022/09/21~ 2022/09/30
 
 # :tv: 시연영상
+<img width="70%" src="https://user-images.githubusercontent.com/101076530/194445133-c9078ae8-959e-431e-bed4-7539099d74a7.gif"/>
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=YouTube&logoColor=white"/> https://youtu.be/m9HOG6KaRbk
 
 ## 🔧 주요 기능
