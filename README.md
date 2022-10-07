@@ -9,7 +9,6 @@
 2022/09/21~ 2022/09/30
 
 # :tv: 시연영상
-[Uploading Semi_project_시연영상.gif.crdownload…]()
 <img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=YouTube&logoColor=white"/> https://youtu.be/m9HOG6KaRbk
 
 ## 🔧 주요 기능
